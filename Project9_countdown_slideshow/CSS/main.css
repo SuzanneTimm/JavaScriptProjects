@@ -12,7 +12,6 @@
 /*Hide the images by default*/
 .mySlides {
   display: none;
-  position:relative;
 }
 
 /*Next and previous buttons*/
