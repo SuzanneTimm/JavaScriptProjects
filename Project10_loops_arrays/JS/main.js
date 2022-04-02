@@ -75,14 +75,15 @@ function keyword() {
   document.getElementById("Let").innerHTML = x;
 }
 
-//Assignment 55 I can't get this to work and need help! lol
+// Assignment 55
 
-let car = {
-  make: "Kia",
-  year: "2022",
-  color: "silver",
-  description: function help() {},
-};
+function help() {
+  let car = {
+    make: "Kia",
+    year: "2022",
+    color: "silver",
+  };
 
-document.getElementById("car").innerHTML = "I have a ";
-car.year + car.color + car.make;
+  document.getElementById("car").innerHTML =
+    "I have a " + car.year + " " + car.color + " " + car.make;
+}
