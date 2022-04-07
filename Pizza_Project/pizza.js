@@ -37,6 +37,7 @@ function getTopping(runningTotal, text1) {
     if (toppingArray[j].checked) {
       selectedTopping.push(toppingArray[j].value);
       console.log("selected topping item: (" + toppingArray[j].value + ")");
+      text1 = text1+toppingArray[j].value+" <br>";
     }
   }
 
