@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hikes Around Vancouver</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/one_page_website.css" />
+    <script src="JS/one_page_website.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <a href="#hikes">Hikes</a>
+        <a href="#photogallery">Photo Gallery</a>
+        <a href="#contactform">Contact Form</a>
+        <a href="#hikingvideo">Hiking Video</a>
+      </nav>
+
+      <section>
+        <img src="./thumb/cover.jpg" class="cover" />
+      </section>
+
+      <section id="hikes" class="hikes">
+        <h1>Hiking Around Vancouver</h1>
+        <p>These are a few of my favorite hiking trails in the Lower Mainland.</p>
+        <ul>
+          <li>Pacific Spirit Regional Park</li>
+          <li>Mystery Lake</li>
+          <li>Cypress Falls Park</li>
+          <li>Lighthouse Park</li>
+          <li>Joffre Lakes</li>
+          <li>Hicks Lake</li>
+          <li>Derby Reach</li>
+          <li>Fort to Fort Trail</li>
+          <li>Campbell Valley</li>
+          <li>Golden Ears</li>
+        </ul>
+      </section>
+
+      <section id="photogallery" class="photogallery">
+        <h1>Photo Gallery</h1>
+        <p>
+          Most of these hikes are within a 1 hour drive from Vancouver, British Columbia. These are just a few of my favorite places to hike
+          and I hope you enjoy them as much as I do!
+        </p>
+        <p></p>
+        <table>
+          <tr>
+            <td><img src="./thumb/hiking_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" /></td>
+            <td><img src="./thumb/hiking_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" /></td>
+          </tr>
+
+          <tr>
+            <td><img src="./thumb/hiking_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" /></td>
+            <td><img src="./thumb/hiking_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" /></td>
+          </tr>
+
+          <tr>
+            <td><img src="./thumb/hiking_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" /></td>
+            <td><img src="./thumb/hiking_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" /></td>
+          </tr>
+
+          <tr>
+            <td><img src="./thumb/hiking_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" /></td>
+            <td><img src="./thumb/hiking_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" /></td>
+          </tr>
+          <tr>
+            <td><img src="./thumb/hiking_9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" /></td>
+            <td><img src="./thumb/hiking_10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" /></td>
+          </tr>
+        </table>
+      </section>
+
+      <!---Modal/Lightbox-->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 10</div>
+            <img src="./thumb/hiking_1.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 10</div>
+            <img src="./thumb/hiking_2.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 /10</div>
+            <img src="./thumb/hiking_3.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 10</div>
+            <img src="./thumb/hiking_4.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="./thumb/hiking_5.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="./thumb/hiking_6.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="./thumb/hiking_7.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="./thumb/hiking_8.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="./thumb/hiking_9.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">10 / 10</div>
+            <img src="./thumb/hiking_10.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_1.jpg" onclick="currentSlide(1)" alt="Pacific Spirit Regional Park" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_2.jpg" onclick="currentSlide(2)" alt="Mystery Lake" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_3.jpg" onclick="currentSlide(3)" alt="Cypress Falls Park" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_4.jpg" onclick="currentSlide(4)" alt="Lighthouse Park" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_5.jpg" onclick="currentSlide(5)" alt="Joffre Lakes" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_6.jpg" onclick="currentSlide(6)" alt="Hicks Lake" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_7.jpg" onclick="currentSlide(7)" alt="Derby Reach" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_8.jpg" onclick="currentSlide(8)" alt="Fort to Fort Trail" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_9.jpg" onclick="currentSlide(9)" alt="Campbell Valley Regional Park" />
+          </div>
+
+          <div class="column">
+            <img class="demo" src="./thumb/hiking_10.jpg" onclick="currentSlide(10)" alt="Golden Ears" />
+          </div>
+        </div>
+      </div>
+
+      <!--Video-->
+      <section id="hiking.mp4">
+        <h1>"I like this place and could willingly waste my time in it." -William Shakespeare</h1>
+        <video width="320" height="240" controls>
+          <source src="hiking.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!--Contact Form-->
+      <section id="contactform">
+        <form action="" method="get">
+          <div>
+            <label for="First_Name">First name:</label>
+            <input type="text" id="First_Name" name="First_Name" />
+          </div>
+
+          <div>
+            <label for="Last_Name">Last Name:</label>
+            <input type="text" id="Last_Name" name="Last_Name" />
+          </div>
+
+          <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" />
+          </div>
+
+          <div>
+            <label for="Password">Password:</label>
+            <input type="Password" id="Password" name="Password" />
+          </div>
+
+          <div class="right">
+            <button type="submit" value="submit" name="submit">Save</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>Hikes Around Vancouver&copy; Suzanne Timm 2022</footer>
+  </body>
+</html>
